@@ -1,351 +1,1383 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Fitnesscenter Klausen & Villnöss</title>
-    <link rel="shortcut icon" href="../../img/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Oswald&family=Barlow:wght@300;400;500;600;700&display=swap"
-    />
-    <link rel="stylesheet" href="../../css/plugins.css" />
-    <link rel="stylesheet" href="../../css/style.css" />
-  </head>
-  <body>
-    <!-- Preloader -->
-    <div class="preloader-bg"></div>
-    <div id="preloader">
-      <div id="preloader-status">
-        <div class="preloader-position loader"><span></span></div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Fitnesscenter Klausen & Villnöss</title>
+  <link rel="shortcut icon" href="../../img/favicon.png" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oswald&family=Barlow:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../../css/plugins.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader-bg"></div>
+  <div id="preloader">
+    <div id="preloader-status">
+      <div class="preloader-position loader"><span></span></div>
+    </div>
+  </div>
+  <!-- Mouse cursor -->
+  <div class="mouse-cursor cursor-outer"></div>
+  <div class="mouse-cursor cursor-inner"></div>
+  <!-- Progress scroll totop -->
+  <div class="progress-wrap cursor-pointer">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo-wrapper">
+        <a class="logo" href="/"> <img src="../../img/logo.jpg" class="logo-img" alt="" /> </a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="ti-menu"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/services/membership">Mitgliedschaft</a></li>
+          <li class="nav-item"><a class="nav-link" href="/gallery">Gallerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Kontakt</a></li>
+        </ul>
       </div>
     </div>
-    <!-- Mouse cursor -->
-    <div class="mouse-cursor cursor-outer"></div>
-    <div class="mouse-cursor cursor-inner"></div>
-    <!-- Progress scroll totop -->
-    <div class="progress-wrap cursor-pointer">
-      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-      </svg>
-    </div>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+  </nav>
+
+  <!-- Header Banner -->
+  <section class="banner-header section-padding bg-img" data-overlay-dark="2" data-background="../../img/slider/1.jpg">
+    <div class="v-bottom">
       <div class="container">
-        <!-- Logo -->
-        <div class="logo-wrapper">
-          <a class="logo" href="/"> <img src="../../img/logo.jpg" class="logo-img" alt="" /> </a>
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class="animate-box" data-animate-effect="fadeInUp">bilder & videos</h6>
+            <h1 class="animate-box" data-animate-effect="fadeInUp">Gallerie</h1>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"><i class="ti-menu"></i></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="/services/membership">Mitgliedschaft</a></li>
-            <li class="nav-item"><a class="nav-link" href="/gallery">Gallerie</a></li>
-            <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
-            <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="/contact">Kontakt</a></li>
+  <!--  Gallery Image -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <ul class="gallery-filter">
+            <li class="active" data-filter="*">Alle</li>
+            <li data-filter=".chiusa">Klausen</li>
+            <li data-filter=".funes">Villnöss</li>
           </ul>
         </div>
       </div>
-    </nav>
 
-    <!-- Header Banner -->
-    <section
-      class="banner-header section-padding bg-img"
-      data-overlay-dark="2"
-      data-background="../../img/slider/1.jpg"
-    >
-      <div class="v-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h6 class="animate-box" data-animate-effect="fadeInUp">bilder & videos</h6>
-              <h1 class="animate-box" data-animate-effect="fadeInUp">Gallerie</h1>
+      <div class="row gallery-items">
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-1.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-1.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
             </div>
-          </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-2.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-2.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-3.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-3.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-4.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-4.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-5.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-5.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-6.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-6.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-7.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-7.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-8.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-8.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-9.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-9.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-10.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-10.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-11.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-11.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-12.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-12.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-13.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-13.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-14.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-14.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-15.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-15.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-16.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-16.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-17.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-17.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-18.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-18.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-19.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-19.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-20.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-20.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-21.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-21.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-22.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-22.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-23.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-23.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-24.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-24.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-25.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-25.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-26.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-26.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-27.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-27.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-28.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-28.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-29.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-29.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-30.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-30.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-31.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-31.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-32.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-32.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-33.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-33.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-34.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-34.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-35.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-35.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-36.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-36.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-37.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-37.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-38.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-38.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-39.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-39.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-40.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-40.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item funes">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-41.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-41.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness funes" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-42.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-42.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-43.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-43.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-44.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-44.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-45.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-45.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-46.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-46.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-47.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-47.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-48.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-48.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-49.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-49.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-50.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-50.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-51.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-51.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-52.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-52.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-53.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-53.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-54.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-54.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-55.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-55.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-56.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-56.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-57.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-57.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-58.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-58.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-59.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-59.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-60.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-60.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-61.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-61.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-62.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-62.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-63.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-63.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-64.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-64.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-65.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-65.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-66.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-66.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-67.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-67.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-68.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-68.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-69.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-69.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-70.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-70.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-71.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-71.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-72.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-72.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-73.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-73.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-74.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-74.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-75.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-75.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-76.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-76.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-77.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-77.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-78.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-78.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-79.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-79.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-80.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-80.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-81.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-81.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-82.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-82.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-83.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-83.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-84.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-84.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-85.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-85.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-86.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-86.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-87.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-87.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-88.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-88.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-89.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-89.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-90.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-90.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-91.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-91.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-92.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-92.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-93.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-93.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-94.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-94.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-95.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-95.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-96.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-96.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-97.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-97.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-98.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-98.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-99.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-99.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-100.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-100.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-101.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-101.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 gallery-masonry-wrapper single-item chiusa">
+          <a href="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-102.jpg"
+            class="gallery-masonry-item-img-link img-zoom">
+            <div class="gallery-box">
+              <div class="gallery-img">
+                <img src="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-102.jpg"
+                  class="img-fluid mx-auto d-block" alt="Fitness chiusa" />
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--  Gallery Image -->
-    <section class="section-padding">
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="background bg-img bg-fixed section-padding pb-0" data-background="../../img/slider/4.jpg"
+      data-overlay-dark="2">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <ul class="gallery-filter">
-              <li class="active" data-filter="*">All</li>
-              <li data-filter=".cardio">Cardio</li>
-              <li data-filter=".weight">Weight</li>
-              <li data-filter=".crossfit">Crossfit</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gallery-items">
-          <div class="col-md-4 gallery-masonry-wrapper single-item cardio">
-            <a href="../../img/slider/1.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/1.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 gallery-masonry-wrapper single-item weight">
-            <a href="../../img/slider/13.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/13.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 gallery-masonry-wrapper single-item cardio">
-            <a href="../../img/slider/12.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/12.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 gallery-masonry-wrapper single-item crossfit">
-            <a href="../../img/slider/11.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/11.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 gallery-masonry-wrapper single-item weight">
-            <a href="../../img/slider/10.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/10.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 gallery-masonry-wrapper single-item cardio">
-            <a href="../../img/slider/9.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/9.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 gallery-masonry-wrapper single-item crossfit">
-            <a href="../../img/slider/7.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/7.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 gallery-masonry-wrapper single-item weight">
-            <a href="../../img/slider/6.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/6.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 gallery-masonry-wrapper single-item crossfit">
-            <a href="../../img/slider/5.jpg" class="gallery-masonry-item-img-link img-zoom">
-              <div class="gallery-box">
-                <div class="gallery-img">
-                  <img src="../../img/slider/5.jpg" class="img-fluid mx-auto d-block" alt="" />
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-      <div
-        class="background bg-img bg-fixed section-padding pb-0"
-        data-background="../../img/slider/4.jpg"
-        data-overlay-dark="2"
-      >
-        <div class="container">
-          <div class="row">
-            <!-- Free trial -->
-            <div class="col-md-6 mb-30">
-              <div class="ready v-middle">
-                <h3>Free Trial Training</h3>
-                <p>
-                  Make an appointment today for your free and non-binding trial session.
-                </p>
-                <a href="/contact" class="btn-1 button-1">Jetzt kontaktieren</a>
-              </div>
+          <!-- Free trial -->
+          <div class="col-md-6 mb-30">
+            <div class="ready v-middle">
+              <h3>Free Trial Training</h3>
+              <p>
+                Make an appointment today for your free and non-binding trial session.
+              </p>
+              <a href="/contact" class="btn-1 button-1">Jetzt kontaktieren</a>
             </div>
+          </div>
 
-            <!-- Testimonial box -->
-            <div class="col-md-5 offset-md-1">
-              <div class="testimonials-box">
-                <h4>What <span>Clients</span> Say</h4>
-                <div class="owl-carousel owl-theme">
-                  <div class="item">
-                    <span class="quote"><img src="../../img/quot.png" alt="" /></span>
-                    <p>Lorem luctus nulla…</p>
-                    <div class="info">
-                      <div class="author-img"><img src="../../img/team/1.jpg" alt="" /></div>
-                      <div class="cont"><h6>Jason Brown</h6><span>Customer Review</span></div>
+          <!-- Testimonial box -->
+          <div class="col-md-5 offset-md-1">
+            <div class="testimonials-box">
+              <h4>What <span>Clients</span> Say</h4>
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <span class="quote"><img src="../../img/quot.png" alt="" /></span>
+                  <p>Lorem luctus nulla…</p>
+                  <div class="info">
+                    <div class="author-img"><img src="../../img/team/1.jpg" alt="" /></div>
+                    <div class="cont">
+                      <h6>Jason Brown</h6><span>Customer Review</span>
                     </div>
                   </div>
+                </div>
 
-                  <div class="item">
-                    <span class="quote"><img src="../../img/quot.png" alt="" /></span>
-                    <p>Lorem luctus nulla…</p>
-                    <div class="info">
-                      <div class="author-img"><img src="../../img/team/2.jpg" alt="" /></div>
-                      <div class="cont"><h6>Emily White</h6><span>Customer Review</span></div>
+                <div class="item">
+                  <span class="quote"><img src="../../img/quot.png" alt="" /></span>
+                  <p>Lorem luctus nulla…</p>
+                  <div class="info">
+                    <div class="author-img"><img src="../../img/team/2.jpg" alt="" /></div>
+                    <div class="cont">
+                      <h6>Emily White</h6><span>Customer Review</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section class="clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="owl-carousel owl-theme">
+            <div class="clients-logo">
+              <a href="#0"><img src="../../img/clients/lotto.png" alt="" /></a>
+            </div>
+            <div class="clients-logo">
+              <a href="#0"><img src="../../img/clients/life-fitness.png" alt="" /></a>
+            </div>
+            <div class="clients-logo">
+              <a href="#0"><img src="../../img/clients/brunswick.png" alt="" /></a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Clients -->
-    <section class="clients">
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
       <div class="container">
         <div class="row">
+
+          <div class="col-md-3">
+            <div class="wrap">
+              <h4>Kontakt</h4>
+              <div class="wrap-text">0665 Broadway NY…</div>
+              <div class="wrap-phone">+1 203-123-0606</div>
+              <div class="wrap-mail">info@nostop.com</div>
+            </div>
+          </div>
+
+          <div class="col-md-3 offset-md-1">
+            <div class="opening-hours">
+              <h4>Opening Hours</h4>
+              <ul>
+                <li>
+                  <div class="tit">Monday - Friday</div>
+                  <div class="dots"></div><span>06:00 - 22:00</span>
+                </li>
+                <li>
+                  <div class="tit">Saturday</div>
+                  <div class="dots"></div><span>08:00 - 17:00</span>
+                </li>
+                <li>
+                  <div class="tit">Sunday</div>
+                  <div class="dots"></div><span>Closed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 offset-md-1">
+            <div class="wrap">
+              <h4>Subscribe</h4>
+              <div class="row subscribe">
+                <div class="col-md-12">
+                  <p>Subscribe to take advantage…</p>
+                  <form>
+                    <input type="text" placeholder="Your email" required />
+                    <button>Subscribe</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+
           <div class="col-md-6">
-            <div class="owl-carousel owl-theme">
-              <div class="clients-logo">
-                <a href="#0"><img src="../../img/clients/lotto.png" alt="" /></a>
-              </div>
-              <div class="clients-logo">
-                <a href="#0"><img src="../../img/clients/life-fitness.png" alt="" /></a>
-              </div>
-              <div class="clients-logo">
-                <a href="#0"><img src="../../img/clients/brunswick.png" alt="" /></a>
-              </div>
+            <div class="copyright">
+              <p>
+                2025 © All rights reserved. Designed by
+                <a href="https://1.envato.market/DuruThemes" target="_blank">DuruThemes</a>
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            
-            <div class="col-md-3">
-              <div class="wrap">
-                <h4>Kontakt</h4>
-                <div class="wrap-text">0665 Broadway NY…</div>
-                <div class="wrap-phone">+1 203-123-0606</div>
-                <div class="wrap-mail">info@nostop.com</div>
-              </div>
+          <div class="col-md-6 text-end">
+            <div class="footer-social">
+              <a href="#"><i class="ti-instagram"></i></a>
+              <a href="#"><i class="ti-twitter"></i></a>
+              <a href="#"><i class="ti-youtube"></i></a>
+              <a href="#"><i class="ti-pinterest"></i></a>
             </div>
-
-            <div class="col-md-3 offset-md-1">
-              <div class="opening-hours">
-                <h4>Opening Hours</h4>
-                <ul>
-                  <li><div class="tit">Monday - Friday</div><div class="dots"></div><span>06:00 - 22:00</span></li>
-                  <li><div class="tit">Saturday</div><div class="dots"></div><span>08:00 - 17:00</span></li>
-                  <li><div class="tit">Sunday</div><div class="dots"></div><span>Closed</span></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-md-4 offset-md-1">
-              <div class="wrap">
-                <h4>Subscribe</h4>
-                <div class="row subscribe">
-                  <div class="col-md-12">
-                    <p>Subscribe to take advantage…</p>
-                    <form>
-                      <input type="text" placeholder="Your email" required />
-                      <button>Subscribe</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
+
         </div>
       </div>
+    </div>
+  </footer>
 
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="row">
+  <!-- Scripts -->
+  <script src="../../js/jquery-3.6.3.min.js"></script>
+  <script src="../../js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="../../js/modernizr-2.6.2.min.js"></script>
+  <script src="../../js/imagesloaded.pkgd.min.js"></script>
+  <script src="../../js/jquery.isotope.v3.0.2.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/scrollIt.min.js"></script>
+  <script src="../../js/jquery.waypoints.min.js"></script>
+  <script src="../../js/owl.carousel.min.js"></script>
+  <script src="../../js/jquery.stellar.min.js"></script>
+  <script src="../../js/jquery.magnific-popup.js"></script>
+  <script src="../../js/YouTubePopUp.js"></script>
+  <script src="../../js/custom.js"></script>
+</body>
 
-            <div class="col-md-6">
-              <div class="copyright">
-                <p>
-                  2025 © All rights reserved. Designed by
-                  <a href="https://1.envato.market/DuruThemes" target="_blank">DuruThemes</a>
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-6 text-end">
-              <div class="footer-social">
-                <a href="#"><i class="ti-instagram"></i></a>
-                <a href="#"><i class="ti-twitter"></i></a>
-                <a href="#"><i class="ti-youtube"></i></a>
-                <a href="#"><i class="ti-pinterest"></i></a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/jquery-3.6.3.min.js"></script>
-    <script src="../../js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="../../js/modernizr-2.6.2.min.js"></script>
-    <script src="../../js/imagesloaded.pkgd.min.js"></script>
-    <script src="../../js/jquery.isotope.v3.0.2.js"></script>
-    <script src="../../js/popper.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
-    <script src="../../js/scrollIt.min.js"></script>
-    <script src="../../js/jquery.waypoints.min.js"></script>
-    <script src="../../js/owl.carousel.min.js"></script>
-    <script src="../../js/jquery.stellar.min.js"></script>
-    <script src="../../js/jquery.magnific-popup.js"></script>
-    <script src="../../js/YouTubePopUp.js"></script>
-    <script src="../../js/custom.js"></script>
-  </body>
 </html>
