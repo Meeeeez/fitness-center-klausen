@@ -5,14 +5,20 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-  <meta name="description" content="Falls du noch irgendwelche Fragen hast kannst du uns gerne kontaktieren. Nutze dazu
-  einfach das Kontaktformular rechts oder die unten angegebenen Kontaktdaten.">
+  <meta name="description" content="Weil zusammen alles einfacher ist bietet unser Fitnesscenter dir auch personal Trainings an.
+    Mit maßgeschneiderten Trainingsplänen, individueller Zielsetzung und der Erfahrung unserer Trainer
+    erreichst du deine Ziele leichter und lernst dabei noch einiges über Gesundheit, Fitness und deinen
+    Körper.">
   <title>Fitnesscenter Klausen & Villnöss</title>
-  <link rel="shortcut icon" href="../img/favicon.png" />
+  <link rel="shortcut icon" href="../../img/favicon.png" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Oswald&family=Barlow:wght@300;400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="../css/plugins.css" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link rel="stylesheet" href="../../css/plugins.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
 </head>
 
 <body>
@@ -30,12 +36,11 @@
     </svg>
   </div>
   <!-- Navbar -->
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <!-- Logo -->
       <div class="logo-wrapper">
-        <a class="logo" href="/"> <img src="../img/logo.jpg" class="logo-img" alt="" /> </a>
+        <a class="logo" href="/"> <img src="../../img/logo.jpg" class="logo-img" alt="" /> </a>
         <!-- <a class="logo" href="index.html"> <h2>NO<span>STOP</span></h2> </a> -->
       </div>
       <!-- Button -->
@@ -57,98 +62,101 @@
   </nav>
   <!-- Header Banner -->
   <section class="banner-header section-padding bg-img" data-overlay-dark="2"
-    data-background="../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-61.jpg">
+    data-background="../../img/lowres/Fitness_Klausen_Villnöss_Nov_2025_lowres-33.jpg">
     <div class="v-bottom">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h6 class="animate-box" data-animate-effect="fadeInUp">Schreib uns!</h6>
-            <h1 class="animate-box" data-animate-effect="fadeInUp">Kontakt</h1>
-          </div>
+        <div class="col-md-12">
+          <h6>Unsere Studios</h6>
+          <h1>Klausen</h1>
         </div>
       </div>
     </div>
   </section>
-  <!-- Kontakt -->
-  <section class="contact section-padding">
+  <!-- Classes Single -->
+  <section class="classes-single" style="margin-top: 120px; margin-bottom: 60px">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 mb-60 animate-box" data-animate-effect="fadeInUp">
-          <h5>
-            noch fragen?
-            <span>schreib uns!</span>
-          </h5>
-          <p class="mb-30">
-            Falls du noch irgendwelche Fragen hast kannst du uns gerne kontaktieren. Nutze dazu
-            einfach das Kontaktformular rechts oder die unten angegebenen Kontaktdaten.
-          </p>
-          <div class="con">
-            <div class="icon">
-              <span class="flaticon-phone-call" style="color: white"></span>
-            </div>
-            <div class="con-content">
-              <p class="text"><a href="tel:+390472840305">+39 0472 840 305</a></p>
-            </div>
-          </div>
-          <div class="con">
-            <div class="icon">
-              <span class="flaticon-envelope" style="color: white"></span>
-            </div>
-            <div class="con-content">
-              <p class="text">
-                <a href="mailto:info@fitnesscenterklausen.com">info@fitnesscenterklausen.com</a>
+        <!-- Classes Content -->
+        <div class="col-md-7">
+          <div class="row">
+            <div class="col-md-12 mb-30">
+              <h5>Über unser Studio in Klausen</h5>
+              <p>
+                Unser Hauptstudio in Klausen ist groß und bietet mehrere Trainingsräume, sodass für jeden etwas dabei
+                ist. Hier findest du modernste Geräte, großzügige Flächen für Kraft- und Ausdauertraining sowie Bereiche
+                für Functional Training und Gruppenkurse.
               </p>
-            </div>
-          </div>
-          <div class="con">
-            <div class="icon">
-              <span class="flaticon-pin" style="color: white"></span>
-            </div>
-            <div class="con-content">
-              <div class="text">Langrain 7 - 39043 Klausen<br />Italien</div>
+              <p>
+                Die offene Gestaltung und die helle, freundliche Atmosphäre machen das Training angenehm und
+                motivierend. Egal, ob du gerade erst anfängst oder schon lange dabei bist – unser Team steht dir mit Rat
+                und Tat zur Seite, damit du deine Ziele erreichen kannst.
+              </p>
+              <ul class="list-unstyled list">
+                <li>
+                  <div class="list-icon"><span class="ti-check"></span></div>
+                  <div class="list-text">
+                    <p>Großer Cardiobereich</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-icon"><span class="ti-check"></span></div>
+                  <div class="list-text">
+                    <p>Großer Kraftbereich</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-icon"><span class="ti-check"></span></div>
+                  <div class="list-text">
+                    <p>Boxraum</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-5 offset-md-1 animate-box" data-animate-effect="fadeInUp">
-          <div class="form-box">
-            <h5>Kontaktformular</h5>
-            <form method="post" class="contact__form" action="../mail.php">
-              <!-- Form message -->
-              <div class="row">
-                <div class="col-12">
-                  <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                    Nachricht erfolgreich gesendet!
-                  </div>
+        <!-- Classes Details -->
+        <div class="col-md-4 offset-md-1">
+          <aside class="sidebar">
+            <div class="con">
+              <h5 style="color: white">Einzelheiten</h5>
+              <div class="info">
+                <div class="image icon" style="color: white"><span class="flaticon-location"></span></div>
+                <div class="wrap">
+                  <p style="color: white">Klausen</p>
                 </div>
               </div>
-              <!-- Form elements -->
-              <div class="row">
-                <div class="col-md-12 form-group">
-                  <input name="name" type="text" placeholder="Vollständiger Name *" required />
-                </div>
-                <div class="col-md-6 form-group">
-                  <input name="email" type="email" placeholder="Email *" required />
-                </div>
-                <div class="col-md-6 form-group">
-                  <input name="phone" type="text" placeholder="Telefonnummer *" required />
-                </div>
-                <div class="col-md-12 form-group">
-                  <input name="subject" type="text" placeholder="Betreff *" required />
-                </div>
-                <div class="col-md-12 form-group">
-                  <textarea name="message" id="message" cols="30" rows="4" placeholder="Nachricht *"
-                    required></textarea>
-                </div>
-                <div class="col-md-12 mt-15">
-                  <input name="submit" type="submit" value="Senden" style="color: white" />
+              <div class="info">
+                <div class="wrap">
+                  <div class="image icon" style="color: white"><span class="flaticon-arrow"></span></div>
+                  <p style="color: white">300 m²</p>
                 </div>
               </div>
-            </form>
-          </div>
+            </div>
+            <!-- instructor -->
+            <div class="instructor">
+              <a href="#" class="wrapper w-inline-block">
+                <div class="image-wrapper details">
+                  <img src="../../img/andreas.png" alt="" class="image details" />
+                </div>
+                <div class="cont">
+                  <div style="color: white" class="details-subtitle">Trainer und Studioleiter</div>
+                  <div style="color: white" class="details-name">Andreas Braito</div>
+                </div>
+              </a>
+              <!-- button-->
+              <a href="/kontakt" class="btn-5 button-5 full-width">Jetzt Kontaktieren</a>
+            </div>
+          </aside>
         </div>
       </div>
     </div>
   </section>
+
+  <!--  Pricing -->
+  <section class="pricing pt-0" style="margin-bottom: 60px;">
+    <div id="map" class="container" style="width: 100%;height: 500px;background-color: wheat;"></div>
+  </section>
+
 
   <!-- Testimonials -->
   <section class="testimonials">
@@ -256,20 +264,28 @@
     </div>
   </footer>
   <!-- jQuery -->
-  <script src="../js/jquery-3.6.3.min.js"></script>
-  <script src="../js/jquery-migrate-3.0.0.min.js"></script>
-  <script src="../js/modernizr-2.6.2.min.js"></script>
-  <script src="../js/imagesloaded.pkgd.min.js"></script>
-  <script src="../js/jquery.isotope.v3.0.2.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/scrollIt.min.js"></script>
-  <script src="../js/jquery.waypoints.min.js"></script>
-  <script src="../js/owl.carousel.min.js"></script>
-  <script src="../js/jquery.stellar.min.js"></script>
-  <script src="../js/jquery.magnific-popup.js"></script>
-  <script src="../js/YouTubePopUp.js"></script>
-  <script src="../js/custom.js"></script>
+  <script src="../../js/jquery-3.6.3.min.js"></script>
+  <script src="../../js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="../../js/modernizr-2.6.2.min.js"></script>
+  <script src="../../js/imagesloaded.pkgd.min.js"></script>
+  <script src="../../js/jquery.isotope.v3.0.2.js"></script>
+  <script src="../../js/popper.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/scrollIt.min.js"></script>
+  <script src="../../js/jquery.waypoints.min.js"></script>
+  <script src="../../js/owl.carousel.min.js"></script>
+  <script src="../../js/jquery.stellar.min.js"></script>
+  <script src="../../js/jquery.magnific-popup.js"></script>
+  <script src="../../js/YouTubePopUp.js"></script>
+  <script src="../../js/custom.js"></script>
+  <script>
+    var map = L.map('map').setView([46.63685056932407, 11.56022175808281], 15);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var marker = L.marker([46.63685056932407, 11.56022175808281]).addTo(map);
+  </script>
 </body>
 
 </html>
